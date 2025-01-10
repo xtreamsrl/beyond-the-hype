@@ -21,5 +21,5 @@ uv sync
    Install it with:
 
 ```bash
-pre-commit install
+uv run pre-commit install --install-hooks
 ```
