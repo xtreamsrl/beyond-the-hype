@@ -3,6 +3,10 @@ name = "ace"
 version = "0.1.0"
 description = "Become the Ace of SPLADEs"
 readme = "README.md"
+authors = [
+    { name = "Luca Baggi", email = "luca.baggi@xtreamers.io" },
+    { name = "Fabio Lipreri", email = "fabio.lipreri@xtreamers.io" }
+]
 requires-python = ">=3.11"
 
 dependencies = [
@@ -18,3 +22,25 @@ dependencies = [
 dev = [
     "pre-commit-uv>=4.1.4",
 ]
+
+[tool.ruff.lint]
+extend-select = ["ALL"]
+extend-ignore = [
+  "PD",
+]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.pyright]
+exclude = [
+  ".venv"
+]
+venvPath = "."
+venv = ".venv"
+reportUnusedCallResult = false
+reportUnknownMemberType = false
