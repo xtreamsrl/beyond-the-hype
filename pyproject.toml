@@ -32,10 +32,6 @@ extend-ignore = [
 [tool.ruff.lint.pydocstyle]
 convention = "google"
 
-[build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.build"
-
 [tool.pyright]
 exclude = [
   ".venv"
