@@ -3,10 +3,12 @@ name = "ace"
 version = "0.1.0"
 description = "Become the Ace of SPLADEs"
 readme = "README.md"
-requires-python = ">=3.11"
-packages = [
-    { include = "ace_of_splades", from = "src" },
+authors = [
+    { name = "Luca Baggi", email = "luca.baggi@xtreamers.io" },
+    { name = "Fabio Lipreri", email = "fabio.lipreri@xtreamers.io" }
 ]
+requires-python = ">=3.11"
+
 dependencies = [
     "fastparquet>=2024.11.0",
     "jupyterlab>=4.3.4",
@@ -15,3 +17,26 @@ dependencies = [
     "pyarrow>=18.1.0",
     "sentence-transformers>=3.3.1",
 ]
+
+[dependency-groups]
+dev = [
+    "pre-commit-uv>=4.1.4",
+]
+
+[tool.ruff.lint]
+extend-select = ["ALL"]
+extend-ignore = [
+  "PD",
+]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.pyright]
+exclude = [
+  ".venv"
+]
+venvPath = "."
+venv = ".venv"
+reportUnusedCallResult = false
+reportUnknownMemberType = false
