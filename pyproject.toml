@@ -3,7 +3,7 @@ name = "ace"
 version = "0.1.0"
 description = "Become the Ace of SPLADEs"
 readme = "README.md"
-requires-python = ">=3.12"
+requires-python = ">=3.11"
 packages = [
     { include = "ace_of_splades", from = "src" },
 ]
