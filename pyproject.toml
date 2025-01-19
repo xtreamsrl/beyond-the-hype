@@ -4,9 +4,7 @@ version = "0.1.0"
 description = "Become the Ace of SPLADEs"
 readme = "README.md"
 requires-python = ">=3.11"
-packages = [
-    { include = "ace_of_splades", from = "src" },
-]
+
 dependencies = [
     "fastparquet>=2024.11.0",
     "jupyterlab>=4.3.4",
@@ -14,4 +12,9 @@ dependencies = [
     "polars>=1.19.0",
     "pyarrow>=18.1.0",
     "sentence-transformers>=3.3.1",
+]
+
+[dependency-groups]
+dev = [
+    "pre-commit-uv>=4.1.4",
 ]
