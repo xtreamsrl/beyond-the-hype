@@ -11,10 +11,13 @@ requires-python = ">=3.11"
 
 dependencies = [
     "fastparquet>=2024.11.0",
+    "ipywidgets>=8.1.5",
     "jupyterlab>=4.3.4",
     "lancedb>=0.18.0",
+    "openai>=1.59.7",
     "polars>=1.19.0",
     "pyarrow>=18.1.0",
+    "python-dotenv>=1.0.1",
     "sentence-transformers>=3.3.1",
 ]
 
