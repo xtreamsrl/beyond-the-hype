@@ -9,7 +9,7 @@ Become the Ace of SPLADEs!
 > [!NOTE]
 > The project uses Python 3.12
 
-2. Install uv, following the [official docs](https://docs.astral.sh/uv/getting-started/installation/)
+2. Install `uv`, following the [official docs](https://docs.astral.sh/uv/getting-started/installation/)
 
 3. Run the following:
 
@@ -17,7 +17,7 @@ Become the Ace of SPLADEs!
 uv sync
 ```
 
-4. It is highly recommended to use `nbstripout` to avoid pushing the output of jupyter notebooks.
+4. It is highly recommended to use `nbstripout` to avoid pushing the output of Jupyter Notebooks.
    Install it with:
 
 ```bash
