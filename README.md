@@ -2,6 +2,11 @@
 
 Become the Ace of SPLADEs!
 
+**name** | **open in**
+:-----: | :-------:
+[Embed Movies into Vectors](./notebooks/00-datasets_builder.ipynb) | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/xtreamsrl/movies-buddy/blob/main/notebooks/00-dataset_builder.ipynb)
+[Simple RAG pipeline](./notebooks/01-first-rag.ipynb) | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/xtreamsrl/movies-buddy/blob/main/notebooks/01-first-rag.ipynb)
+
 ## 🤗 How to contribute
 
 1. Clone the repo.
