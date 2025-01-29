@@ -43,3 +43,7 @@ venvPath = "."
 venv = ".venv"
 reportUnusedCallResult = false
 reportUnknownMemberType = false
+
+[build-system]
+requires = [ "setuptools >= 40.9.0" ]
+build-backend = "setuptools.build_meta"
