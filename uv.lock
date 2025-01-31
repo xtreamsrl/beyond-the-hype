@@ -10,6 +10,7 @@ name = "ace"
 version = "0.1.0"
 source = { editable = "." }
 dependencies = [
+    { name = "fastexcel" },
     { name = "fastparquet" },
     { name = "ipywidgets" },
     { name = "jupyterlab" },
@@ -19,6 +20,7 @@ dependencies = [
     { name = "pyarrow" },
     { name = "python-dotenv" },
     { name = "sentence-transformers" },
+    { name = "xlsxwriter" },
 ]
 
 [package.dev-dependencies]
@@ -28,6 +30,7 @@ dev = [
 
 [package.metadata]
 requires-dist = [
+    { name = "fastexcel", specifier = ">=0.12.1" },
     { name = "fastparquet", specifier = ">=2024.11.0" },
     { name = "ipywidgets", specifier = ">=8.1.5" },
     { name = "jupyterlab", specifier = ">=4.3.4" },
@@ -37,6 +40,7 @@ requires-dist = [
     { name = "pyarrow", specifier = ">=18.1.0" },
     { name = "python-dotenv", specifier = ">=1.0.1" },
     { name = "sentence-transformers", specifier = ">=3.3.1" },
+    { name = "xlsxwriter", specifier = ">=3.2.1" },
 ]
 
 [package.metadata.requires-dev]
@@ -443,6 +447,22 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/91/50/a9d80c47ff289c611ff12e63f7c5d13942c65d68125160cefd768c73e6e4/executing-2.2.0.tar.gz", hash = "sha256:5d108c028108fe2551d1a7b2e8b713341e2cb4fc0aa7dcf966fa4327a5226755", size = 978693 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/7b/8f/c4d9bafc34ad7ad5d8dc16dd1347ee0e507a52c3adb6bfa8887e1c6a26ba/executing-2.2.0-py2.py3-none-any.whl", hash = "sha256:11387150cad388d62750327a53d3339fad4888b39a6fe233c3afbb54ecffd3aa", size = 26702 },
+]
+
+[[package]]
+name = "fastexcel"
+version = "0.12.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "pyarrow" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/93/bf/1876776d424bbcb069520710df4b930adfe998eaa0bb4a88988254ffa8e7/fastexcel-0.12.1.tar.gz", hash = "sha256:5dc2f1ff3ddff6c933d1f924add7f7f5dc20388c1e70b22afae0f28b3c4f01c9", size = 38264 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/64/a8/e39f5c609deaf1754b520e75231368b373c4e6a62dfc6e8d283918aa2284/fastexcel-0.12.1-cp38-abi3-macosx_10_12_x86_64.whl", hash = "sha256:7c4c959a49329a53540ed86d4f92cd4af2d774b08c47ad190841e4daf042758a", size = 1174326 },
+    { url = "https://files.pythonhosted.org/packages/b5/d7/1ff26ec00aac2623a87e9397c252f515f45ed28425007c1b895f1810fd5a/fastexcel-0.12.1-cp38-abi3-macosx_11_0_arm64.whl", hash = "sha256:e889290b2d1437e57c4fb500657f0d2908de6aa5b291475b93e3b5d7e0cea938", size = 1141937 },
+    { url = "https://files.pythonhosted.org/packages/9d/56/f4967db7c848e191d633366fe4876af74e656e809c9719c1a7489b50349d/fastexcel-0.12.1-cp38-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:c09119f14760dfee0c1cb94ef281bee2abb844975fdf0fbf34c5b836ff58d39d", size = 1288445 },
+    { url = "https://files.pythonhosted.org/packages/50/0d/c2e61c3b30d2cbd083cb010346745edc8e6ade3401b1f9d7f083aaff051e/fastexcel-0.12.1-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:a169b72df88406007d8449a4b216effddeaad5e9d73f4de1fbd8cbfd6ce6a01c", size = 1309212 },
+    { url = "https://files.pythonhosted.org/packages/85/13/6662e60e76e878e2251ca78d7f6630103a8e998f9ca1fa7154f94845425f/fastexcel-0.12.1-cp38-abi3-win_amd64.whl", hash = "sha256:5c1868546ae0912040449e0b26dd4759db3f76a94e0fa5ac3c86fdaf54185e9c", size = 1017083 },
 ]
 
 [[package]]
@@ -2519,4 +2539,13 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/56/fc/238c424fd7f4ebb25f8b1da9a934a3ad7c848286732ae04263661eb0fc03/widgetsnbextension-4.0.13.tar.gz", hash = "sha256:ffcb67bc9febd10234a362795f643927f4e0c05d9342c727b65d2384f8feacb6", size = 1164730 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/21/02/88b65cc394961a60c43c70517066b6b679738caf78506a5da7b88ffcb643/widgetsnbextension-4.0.13-py3-none-any.whl", hash = "sha256:74b2692e8500525cc38c2b877236ba51d34541e6385eeed5aec15a70f88a6c71", size = 2335872 },
+]
+
+[[package]]
+name = "xlsxwriter"
+version = "3.2.1"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/48/4f/108b0bada5cfcc47c24ea6181f4c563fbafef50bcc0054089c256b2ae578/XlsxWriter-3.2.1.tar.gz", hash = "sha256:97618759cb264fb6a93397f660cca156ffa9561743b1823dafb60dc4474e1902", size = 202868 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/bc/30/040af902cb8a9909d320779d8467aa7590bb91477767fd2b7551f4d91bb5/XlsxWriter-3.2.1-py3-none-any.whl", hash = "sha256:7e8f7c60b7a1660ef791d46ab5de78469cb978b991ca841af61f5832d2f9f4fe", size = 162778 },
 ]
