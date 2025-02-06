@@ -26,7 +26,7 @@ def get_movies_dataset(sample: int = 0, *, local: bool = False) -> pl.DataFrame:
     if sample:
         return pl.read_parquet(source).sample(sample)
 
-    movies = pl.read_parquet(source).rename(
+    return pl.read_parquet(source).rename(
         {
             "Release Year": "release_year",
             "Title": "title",
@@ -37,9 +37,4 @@ def get_movies_dataset(sample: int = 0, *, local: bool = False) -> pl.DataFrame:
             "Wiki Page": "wiki_page",
             "Plot": "plot",
         },
-    )
-
-    return movies.with_columns(
-        pl.col("cast").str.split(by=",").alias("cast"),
-        pl.col("genre").str.split(by="/").alias("genre"),
     )
