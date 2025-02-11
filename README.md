@@ -5,7 +5,12 @@ Become the Ace of SPLADEs!
 **name** | **open in**
 :-----: | :-------:
 [Embed Movies into Vectors](./notebooks/00-datasets_builder.ipynb) | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/xtreamsrl/movies-buddy/blob/main/notebooks/00-dataset_builder.ipynb)
-[Simple RAG pipeline](./notebooks/01-first-rag.ipynb) | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/xtreamsrl/movies-buddy/blob/main/notebooks/01-first-rag.ipynb)
+[Simple RAG Pipeline](./notebooks/01-first-rag.ipynb) | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/xtreamsrl/movies-buddy/blob/main/notebooks/01-first-rag.ipynb)
+[You Need a Domain Expert](./notebooks/02-domain-expert.ipynb) | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/xtreamsrl/movies-buddy/blob/main/notebooks/02-domain-expert.ipynb)
+[LLM-As-a-Judge](./notebooks/03-llm-as-a-judge.ipynb) | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/xtreamsrl/movies-buddy/blob/main/notebooks/03-llm-as-a-judge.ipynb)
+[HyDE: Hypothetical Document Embeddings](./notebooks/04-HyDE.ipynb) | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/xtreamsrl/movies-buddy/blob/main/notebooks/04-HyDE.ipynb)
+[Leverage Metadata To Enanche Retrieval](./notebooks/05-improve-metadata-search.ipynb) | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/xtreamsrl/movies-buddy/blob/main/notebooks/05-improve-metadata-search.ipynb)
+
 
 ## 🤗 How to contribute
 
