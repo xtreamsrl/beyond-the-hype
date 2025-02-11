@@ -1,6 +1,14 @@
-# RAG: One Year Later
+# Beyond the Hype: Building and Evaluating Robust RAG Systems
 
-Become the Ace of SPLADEs!
+Building a Retrieval-Augmented Generation (RAG) system that actually works is harder than it looks. Great retrieval?
+Not enough. Fancy prompts? Still not enough. Without rigorous evaluation, you're just guessing.
+
+This workshop is all about evaluation-driven development—a structured way to measure, diagnose, and improve
+your RAG system without the trial-and-error chaos.
+We’ll see a pragmatic, effective and relatively easy way of bootstrapping an evaluation system, show how to fix what’s
+broken, and give you a clear roadmap to iterate with confidence.
+
+By the end, you’ll know how to go beyond the hype and build a RAG system that truly delivers. 🚀
 
 **name** | **open in**
 :-----: | :-------:
