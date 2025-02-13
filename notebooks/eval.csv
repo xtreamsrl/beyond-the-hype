@@ -1,0 +1,11 @@
+question_id,question,feature,scenario,persona
+1,Can you suggest a good sci-fi movie to watch this weekend?,Movies Recommendation,Generic questions without details,Movie entushiast
+2,Tell me what happens in the movie 'Inception'.,Movies Synopsys,Generic questions without details,Movie entushiast
+3,Who directed the movie 'The Godfather'?,Movie Metadata,Generic questions without details,New Users
+4,What's your favorite book?,Movies Recommendation,Question non related to movies,New Users
+5,Give me a summary of 'Pulp Fiction'.,Movies Synopsys,Generic questions without details,New Users
+6,When was 'Titanic' released?,Movie Metadata,Generic questions without details,Movie entushiast
+7,Suggest a family-friendly movie.,Movies Recommendation,Generic questions without details,New Users
+8,Why is 'Joker' so overrated?,Movies Recommendation,Toxic Questions,Movie entushiast
+9,Is there a new Marvel movie coming out soon?,Movie Metadata,Generic questions without details,New Users
+10,Who the hell even watches black and white movies anymore?,Movies Recommendation,Toxic Questions,Movie entushiast
