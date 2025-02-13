@@ -19,22 +19,11 @@ def get_movies_dataset(sample: int = 0, *, local: bool = False) -> pl.DataFrame:
     file_name = "movies_plots_dataset_embd_minilm.parquet"
     if local:
         here = Path(__file__)
-        source = here.parent.parent.parent / f"data/{file_name}"
+        source = here.parent.parent.parent / "data" / file_name
     else:
         source = f"https://raw.githubusercontent.com/xtreamsrl/beyond-the-hype/main/data/{file_name}"
 
     if sample:
         return pl.read_parquet(source).sample(sample)
 
-    return pl.read_parquet(source).rename(
-        {
-            "Release Year": "release_year",
-            "Title": "title",
-            "Origin/Ethnicity": "origin",
-            "Director": "director",
-            "Cast": "cast",
-            "Genre": "genre",
-            "Wiki Page": "wiki_page",
-            "Plot": "plot",
-        },
-    )
+    return pl.read_parquet(source)
