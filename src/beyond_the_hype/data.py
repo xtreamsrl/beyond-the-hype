@@ -21,7 +21,7 @@ def get_movies_dataset(sample: int = 0, *, local: bool = False) -> pl.DataFrame:
         here = Path(__file__)
         source = here.parent.parent.parent / f"data/{file_name}"
     else:
-        source = f"https://raw.githubusercontent.com/xtreamsrl/ace-of-splades/main/data/{file_name}"
+        source = f"https://raw.githubusercontent.com/xtreamsrl/beyond-the-hype/main/data/{file_name}"
 
     if sample:
         return pl.read_parquet(source).sample(sample)
