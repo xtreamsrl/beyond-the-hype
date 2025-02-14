@@ -13,7 +13,7 @@ dependencies = [
     "lancedb>=0.18.0",
     "openai>=1.59.7",
     "polars>=1.19.0",
-    "pyarrow>=18.1.0",
+    "pyarrow>=18.1.0,<19.0.0",
     "sentence-transformers>=3.3.1",
 ]
 
